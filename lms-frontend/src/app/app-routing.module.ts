@@ -14,6 +14,7 @@ import { UpdateUserComponent } from './update-user/update-user.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { UsersListComponent } from './users-list/users-list.component';
 import { AuthGuard } from './_auth/auth.guard';
+import { RegisterComponent } from './register/register.component'
 
 const routes: Routes = [
   {path: 'books', component: BooksListComponent, canActivate:[AuthGuard], data:{roles:['Admin']}},
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'forbidden', component: ForbiddenComponent},
   {path: 'borrow-book', component: BorrowBookComponent, canActivate:[AuthGuard], data:{roles:['User']}},
-  {path: 'return-book', component: ReturnBookComponent, canActivate:[AuthGuard], data:{roles:['User']}}
+  {path: 'return-book', component: ReturnBookComponent, canActivate:[AuthGuard], data:{roles:['User']}},
+  {path: 'register', component: RegisterComponent}
 ];
 
 @NgModule({

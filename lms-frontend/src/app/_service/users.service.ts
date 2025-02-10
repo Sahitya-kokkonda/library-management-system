@@ -11,6 +11,7 @@ import { UserAuthService } from './user-auth.service';
 export class UsersService {
 
   private baseURL = "http://localhost:8080/admin/users";
+  private userUrl = "http://localhost:8080/user/adduser"
   requestHeader = new HttpHeaders(
     { 'No-Auth': 'True' }
   );
@@ -60,6 +61,12 @@ export class UsersService {
 
   updateUser(userId: number, user: Users): Observable<Object> {
     return this.httpClient.put(`${this.baseURL}/${userId}`, user);
+  }
+
+  registerUser(user: Users): Observable<Object> {
+      return this.httpClient.post(`${this.userUrl}`, user, {
+        headers: this.requestHeader,
+      });
   }
 
 }

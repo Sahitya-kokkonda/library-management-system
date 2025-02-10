@@ -24,7 +24,7 @@ import { AuthInterceptor } from './_auth/auth.interceptor';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { BorrowBookComponent } from './borrow-book/borrow-book.component';
 import { ReturnBookComponent } from './return-book/return-book.component';
-
+import { RegisterComponent } from './register/register.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +37,7 @@ import { ReturnBookComponent } from './return-book/return-book.component';
     UserDetailsComponent,
     UpdateUserComponent,
     LoginComponent,
+    RegisterComponent,
     LogoutComponent,
     HeaderComponent,
     HomeComponent,
