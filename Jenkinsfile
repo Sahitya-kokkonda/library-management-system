@@ -56,8 +56,8 @@ pipeline {
             }
             steps {
                 dir('lms-backend') {
-                    bat 'python --version'
-                    bat 'python tools\\prioritize_tests.py'
+                    bat 'py --version'
+                    bat 'py tools\\prioritize_tests.py'
                     bat 'type test-results\\selected-tests.txt'
                     archiveArtifacts artifacts: 'test-results/prioritization-report.json,test-results/selected-tests.txt', fingerprint: true
                 }
