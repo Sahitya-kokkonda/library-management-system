@@ -56,6 +56,8 @@ pipeline {
             }
             steps {
                 dir('lms-backend') {
+                    bat 'where python'
+                    bat 'echo %PATH%'
                     bat 'python --version'
                     bat 'python tools\\prioritize_tests.py'
                     bat 'type test-results\\selected-tests.txt'
