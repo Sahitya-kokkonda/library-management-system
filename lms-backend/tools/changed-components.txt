@@ -1,0 +1,6 @@
+# Simulate changed components in the current build.
+# Try changing this file before running Jenkins.
+# Valid examples: borrow, books, user, security, infrastructure
+borrow
+books
+user

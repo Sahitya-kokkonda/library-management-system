@@ -1,0 +1,7 @@
+test_class,component,requirement,criticality,past_failures,estimated_seconds
+BorrowControllerTest,borrow,Borrow book and update stock,5,3,7
+JwtUtilTest,security,Issue and validate JWT tokens,5,2,3
+UserControllerTest,user,Register users with encrypted password,4,1,4
+BooksControllerTest,books,Manage book catalogue CRUD,4,1,6
+BooksEntityTest,books,Maintain book copy count,3,0,2
+LmsApplicationTests,infrastructure,Application class sanity check,2,0,1
